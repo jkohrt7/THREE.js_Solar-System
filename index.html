@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Solar System</title>
+		<link rel = "stylesheet" href = "css/solarStyle.css">
+		<style>
+
+		</style>
+	
+		<script src="three.js"></script>
+		<script src="OrbitControls.js"></script>
+
+	</head>
+
+
+	<body>
+		<div id="scene-container">
+			<!--the scene will be created here-->
+		</div>
+		
+		<!--JS file reference-->
+        <script src="solarSystem.js" type="module"></script>
+
+		<!--Camera Controls-->
+		<button class = "planetButton" id = "earthButton" onclick = "changeFocus(3)">Earth</button>
+		<button class = "planetButton" id = "moonButton"  onclick = "changeFocus(2)">Moon</button>
+		<button class = "planetButton" id = "sunButton"   onclick = "changeFocus(1)">Sun</button>
+	</body>
+</html>
